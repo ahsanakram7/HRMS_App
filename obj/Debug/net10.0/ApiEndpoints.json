@@ -1,0 +1,113 @@
+[
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.EmployeeController",
+    "Method": "deleteEmployee",
+    "RelativePath": "api/Employee/deleteEmployee",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.EmployeeController",
+    "Method": "getAllEmployees",
+    "RelativePath": "api/Employee/getAllEmployees",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "obj",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "r",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "p",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.EmployeeController",
+    "Method": "getEmployeeById",
+    "RelativePath": "api/Employee/getEmployeeById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.EmployeeController",
+    "Method": "saveEmployee",
+    "RelativePath": "api/Employee/saveEmployee",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "obj",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.EmployeeController",
+    "Method": "updateEmployee",
+    "RelativePath": "api/Employee/updateEmployee",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "obj",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Employee_Self_Service.WeatherForecast, Employee Self Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
