@@ -1,9 +1,57 @@
 [
   {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "AssignRole",
+    "RelativePath": "api/Auth/AssignRole",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Employee_Self_Service.Modals.AssignRole",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Employee_Self_Service.Modals.LoginUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/Register",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Employee_Self_Service.Modals.RegisterUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Employee_Self_Service.Controllers.EmployeeController",
     "Method": "deleteEmployee",
     "RelativePath": "api/Employee/deleteEmployee",
-    "HttpMethod": "",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -61,7 +109,7 @@
     "ContainingType": "Employee_Self_Service.Controllers.EmployeeController",
     "Method": "saveEmployee",
     "RelativePath": "api/Employee/saveEmployee",
-    "HttpMethod": "",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -77,7 +125,7 @@
     "ContainingType": "Employee_Self_Service.Controllers.EmployeeController",
     "Method": "updateEmployee",
     "RelativePath": "api/Employee/updateEmployee",
-    "HttpMethod": "",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -85,6 +133,38 @@
         "Name": "obj",
         "Type": "System.String",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "AssignRole",
+    "RelativePath": "assign-role",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Employee_Self_Service.Modals.AssignRole",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Employee_Self_Service.Modals.LoginUser",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

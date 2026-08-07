@@ -1,5 +1,6 @@
 ﻿using Employee_Self_Service.DAL;
 using Employee_Self_Service.Modals;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
@@ -7,6 +8,7 @@ using System.Text.Json;
 
 namespace Employee_Self_Service.Controllers
 {
+    [Authorize]
     [ApiController]
     public class EmployeeController : ControllerBase
     {
@@ -17,8 +19,9 @@ namespace Employee_Self_Service.Controllers
             _db = appDbContext;
         }
 
-        [Route("api/Employee/getAllEmployees")]
         [HttpGet]
+        [Route("api/Employee/getAllEmployees")]
+        [Authorize(Roles = "Admin,HR,Employee")]
         public IActionResult getAllEmployees(string obj,int r, int p)
         {
             try
@@ -44,8 +47,9 @@ namespace Employee_Self_Service.Controllers
             }
         }
 
-        [Route("api/Employee/getEmployeeById")]
         [HttpGet]
+        [Route("api/Employee/getEmployeeById")]
+        [Authorize(Roles = "Admin,HR")]
         public IActionResult getEmployeeById(int Id)
         {
             try
@@ -68,7 +72,9 @@ namespace Employee_Self_Service.Controllers
             }
         }
 
+        [HttpPost]
         [Route("api/Employee/saveEmployee")]
+        [Authorize(Roles = "Admin")]
         public IActionResult saveEmployee(string obj)
         {
             try
@@ -90,7 +96,9 @@ namespace Employee_Self_Service.Controllers
             }
         }
 
+        [HttpPut]
         [Route("api/Employee/updateEmployee")]
+        [Authorize(Roles = "Admin")]
         public IActionResult updateEmployee(string obj)
         {
             try
@@ -112,7 +120,9 @@ namespace Employee_Self_Service.Controllers
             }
         }
 
+        [HttpDelete]
         [Route("api/Employee/deleteEmployee")]
+        [Authorize(Roles = "Admin")]
         public IActionResult deleteEmployee(int Id)
         {
             try
