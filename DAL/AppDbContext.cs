@@ -11,6 +11,7 @@ namespace Employee_Self_Service.DAL
 
         }
 
+        public DbSet<RegisterUser> registerUsers => Set<RegisterUser>();
         public DbSet<emp_info> emp_info => Set<emp_info>();
     }
 }

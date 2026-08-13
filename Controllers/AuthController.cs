@@ -1,4 +1,5 @@
-﻿using Employee_Self_Service.Modals;
+﻿using Employee_Self_Service.DAL;
+using Employee_Self_Service.Modals;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -94,6 +95,23 @@ namespace Employee_Self_Service.Controllers
                 message = "User created successfully."
             });
         }
+
+        // ============================ // Get All Users // ============================
+        /*[Authorize(Roles = "Admin")] */
+        /*[Route("api/Auth/GetAllUsers")] 
+        [HttpGet] 
+        public async Task<IActionResult> GetAllUsers() 
+        { 
+            var users = _userManager.Users.ToList(); 
+            var userList = new List<object>(); 
+            foreach (var user in users) 
+            { 
+                var roles = await _userManager.GetRolesAsync(user); 
+                userList.Add(new { user.Id, user.UserName, user.Email, user.FullName, Roles = roles }); 
+            } 
+            
+            return Ok(userList); 
+        }*/
 
         [Route("api/Auth/login")]
         [HttpPost("login")]

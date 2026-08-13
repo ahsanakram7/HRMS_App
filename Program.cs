@@ -1,10 +1,11 @@
 using Employee_Self_Service.DAL;
-using Employee_Self_Service.Data;
+//using Employee_Self_Service.Data;
 using Employee_Self_Service.Modals;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using System.Security.Claims;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -47,7 +48,7 @@ builder.Services.AddAuthentication(options =>
                     Encoding.UTF8.GetBytes(
                         builder.Configuration["Jwt:Key"])),
             
-            RoleClaimType = "role"
+            RoleClaimType = ClaimTypes.Role
         };
 }); 
 
@@ -76,11 +77,11 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-using (var scope = app.Services.CreateScope())
+/*using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
 
     await IdentitySeeder.SeedRoles(services);
-}
+}*/
 
 app.Run();
