@@ -1,6 +1,6 @@
 using Employee_Self_Service.DAL;
 //using Employee_Self_Service.Data;
-using Employee_Self_Service.Modals;
+using Employee_Self_Service.Modals.Entities;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;

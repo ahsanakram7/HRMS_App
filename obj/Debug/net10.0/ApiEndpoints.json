@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "Employee_Self_Service.Modals.AssignRole",
+        "Type": "Employee_Self_Service.Modals.DTOs.AssignRole",
         "IsRequired": true
       }
     ],
@@ -17,12 +17,182 @@
   },
   {
     "ContainingType": "Employee_Self_Service.Controllers.AuthController",
-    "Method": "GetAllUsers",
-    "RelativePath": "api/Auth/GetAllUsers",
-    "HttpMethod": "GET",
+    "Method": "CreateRole",
+    "RelativePath": "api/Auth/CreateRole",
+    "HttpMethod": "",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Employee_Self_Service.Modals.DTOs.RegisterRole",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "CreateUser",
+    "RelativePath": "api/Auth/CreateUser",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Employee_Self_Service.Modals.DTOs.RegisterUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "DeleteRole",
+    "RelativePath": "api/Auth/DeleteRole",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/Auth/DeleteUser",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "EditRole",
+    "RelativePath": "api/Auth/EditRole",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Employee_Self_Service.Modals.DTOs.RegisterRole",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "EditUser",
+    "RelativePath": "api/Auth/EditUser",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Employee_Self_Service.Modals.DTOs.RegisterUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "getAllRoles",
+    "RelativePath": "api/Auth/getAllRoles",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "r",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "p",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/Auth/getAllUsers",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "r",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "p",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "getRoleById",
+    "RelativePath": "api/Auth/getRoleById",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "getUserById",
+    "RelativePath": "api/Auth/getUserById",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -35,7 +205,7 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "Employee_Self_Service.Modals.LoginUser",
+        "Type": "Employee_Self_Service.Modals.DTOs.LoginUser",
         "IsRequired": true
       }
     ],
@@ -51,7 +221,7 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "Employee_Self_Service.Modals.RegisterUser",
+        "Type": "Employee_Self_Service.Modals.DTOs.RegisterUser",
         "IsRequired": true
       }
     ],
@@ -148,6 +318,154 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Employee_Self_Service.Controllers.RoleActivitiesController",
+    "Method": "CreateRoleActivities",
+    "RelativePath": "api/RoleActivities/CreateRoleActivities",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.RoleActivitiesController",
+    "Method": "getAllRoleActivities",
+    "RelativePath": "api/RoleActivities/getAllRoleActivities",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.RoleActivitiesController",
+    "Method": "UpdateRoleActivities",
+    "RelativePath": "api/RoleActivities/UpdateRoleActivities",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Employee_Self_Service.Modals.Entities.RoleActivities[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.ScreenController",
+    "Method": "deleteScreen",
+    "RelativePath": "api/Screens/deleteScreen",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.ScreenController",
+    "Method": "getAllScreens",
+    "RelativePath": "api/Screens/getAllScreens",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "obj",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "r",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "p",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.ScreenController",
+    "Method": "getAllScreensBasic",
+    "RelativePath": "api/Screens/getAllScreensBasic",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.ScreenController",
+    "Method": "getScreenById",
+    "RelativePath": "api/Screens/getScreenById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.ScreenController",
+    "Method": "saveScreen",
+    "RelativePath": "api/Screens/saveScreen",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "screen",
+        "Type": "Employee_Self_Service.Modals.Entities.Screens",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.ScreenController",
+    "Method": "updateScreen",
+    "RelativePath": "api/Screens/updateScreen",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "screen",
+        "Type": "Employee_Self_Service.Modals.Entities.Screens",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Employee_Self_Service.Controllers.AuthController",
     "Method": "AssignRole",
     "RelativePath": "assign-role",
@@ -157,8 +475,168 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "Employee_Self_Service.Modals.AssignRole",
+        "Type": "Employee_Self_Service.Modals.DTOs.AssignRole",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "CreateRole",
+    "RelativePath": "create-role",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Employee_Self_Service.Modals.DTOs.RegisterRole",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.RoleActivitiesController",
+    "Method": "CreateRoleActivities",
+    "RelativePath": "create-role-activities",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "CreateUser",
+    "RelativePath": "create-user",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Employee_Self_Service.Modals.DTOs.RegisterUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "DeleteRole",
+    "RelativePath": "delete-role",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "DeleteUser",
+    "RelativePath": "delete-user",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "EditRole",
+    "RelativePath": "edit-role",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Employee_Self_Service.Modals.DTOs.RegisterRole",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "EditUser",
+    "RelativePath": "edit-user",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Employee_Self_Service.Modals.DTOs.RegisterUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.RoleActivitiesController",
+    "Method": "getAllRoleActivities",
+    "RelativePath": "get-role-activities",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "getRoleById",
+    "RelativePath": "get-roles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "getUserById",
+    "RelativePath": "get-users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -173,8 +651,76 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "Employee_Self_Service.Modals.LoginUser",
+        "Type": "Employee_Self_Service.Modals.DTOs.LoginUser",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "getAllRoles",
+    "RelativePath": "roles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "r",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "p",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.RoleActivitiesController",
+    "Method": "UpdateRoleActivities",
+    "RelativePath": "update-role-activities",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Employee_Self_Service.Modals.Entities.RoleActivities[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Employee_Self_Service.Controllers.AuthController",
+    "Method": "GetAllUsers",
+    "RelativePath": "users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "r",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "p",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

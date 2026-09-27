@@ -1,170 +1,257 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Angular\\Employee Self Service\\",
+  "WorkspaceRootPath": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|d:\\angular\\employee self service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|d:\\angular\\employee self service\\data\\identityseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|solutionrelative:data\\identityseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|d:\\angular\\employee self service\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|d:\\angular\\employee self service\\dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|solutionrelative:dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|d:\\angular\\employee self service\\modals\\registeruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|solutionrelative:modals\\registeruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|d:\\angular\\employee self service\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|c:\\programming\\hrms (angular 12 \u002B .net 10)\\hrms_app\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|d:\\angular\\employee self service\\modals\\loginuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|solutionrelative:modals\\loginuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|c:\\programming\\hrms (angular 12 \u002B .net 10)\\hrms_app\\controllers\\roleactivitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|solutionrelative:controllers\\roleactivitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|d:\\angular\\employee self service\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|c:\\programming\\hrms (angular 12 \u002B .net 10)\\hrms_app\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|c:\\programming\\hrms (angular 12 \u002B .net 10)\\hrms_app\\controllers\\screencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|solutionrelative:controllers\\screencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|c:\\programming\\hrms (angular 12 \u002B .net 10)\\hrms_app\\modals\\entities\\roleactivities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|solutionrelative:modals\\entities\\roleactivities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|c:\\programming\\hrms (angular 12 \u002B .net 10)\\hrms_app\\modals\\entities\\screens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|solutionrelative:modals\\entities\\screens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|c:\\programming\\hrms (angular 12 \u002B .net 10)\\hrms_app\\dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|solutionrelative:dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|c:\\programming\\hrms (angular 12 \u002B .net 10)\\hrms_app\\modals\\dtos\\registeruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|solutionrelative:modals\\dtos\\registeruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|c:\\programming\\hrms (angular 12 \u002B .net 10)\\hrms_app\\modals\\dtos\\registerrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|solutionrelative:modals\\dtos\\registerrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|c:\\programming\\hrms (angular 12 \u002B .net 10)\\hrms_app\\modals\\dtos\\loginuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|solutionrelative:modals\\dtos\\loginuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|c:\\programming\\hrms (angular 12 \u002B .net 10)\\hrms_app\\modals\\dtos\\assignrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|solutionrelative:modals\\dtos\\assignrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|c:\\programming\\hrms (angular 12 \u002B .net 10)\\hrms_app\\modals\\entities\\emp_info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|solutionrelative:modals\\entities\\emp_info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|c:\\programming\\hrms (angular 12 \u002B .net 10)\\hrms_app\\data\\identityseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|solutionrelative:data\\identityseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|c:\\programming\\hrms (angular 12 \u002B .net 10)\\hrms_app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|d:\\angular\\employee self service\\modals\\emp_info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|solutionrelative:modals\\emp_info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|c:\\programming\\hrms (angular 12 \u002B .net 10)\\hrms_app\\migrations\\20260830212022_roleactivitiesdatatype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2C84153-7400-5982-B2C9-5F12D424C925}|Employee Self Service.csproj|solutionrelative:migrations\\20260830212022_roleactivitiesdatatype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 194,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\Angular\\Employee Self Service\\DAL\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "DAL\\AppDbContext.cs",
-              "ToolTip": "D:\\Angular\\Employee Self Service\\DAL\\AppDbContext.cs",
-              "RelativeToolTip": "DAL\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABIAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "RoleActivitiesController.cs",
+              "DocumentMoniker": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Controllers\\RoleActivitiesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RoleActivitiesController.cs",
+              "ToolTip": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Controllers\\RoleActivitiesController.cs",
+              "RelativeToolTip": "Controllers\\RoleActivitiesController.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAkwGEAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-13T11:09:19.258Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-30T21:12:21.01Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "RegisterUser.cs",
-              "DocumentMoniker": "D:\\Angular\\Employee Self Service\\Modals\\RegisterUser.cs",
-              "RelativeDocumentMoniker": "Modals\\RegisterUser.cs",
-              "ToolTip": "D:\\Angular\\Employee Self Service\\Modals\\RegisterUser.cs",
-              "RelativeToolTip": "Modals\\RegisterUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Title": "RoleActivities.cs",
+              "DocumentMoniker": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Modals\\Entities\\RoleActivities.cs",
+              "RelativeDocumentMoniker": "Modals\\Entities\\RoleActivities.cs",
+              "ToolTip": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Modals\\Entities\\RoleActivities.cs",
+              "RelativeToolTip": "Modals\\Entities\\RoleActivities.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-05T07:37:04.666Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginUser.cs",
-              "DocumentMoniker": "D:\\Angular\\Employee Self Service\\Modals\\LoginUser.cs",
-              "RelativeDocumentMoniker": "Modals\\LoginUser.cs",
-              "ToolTip": "D:\\Angular\\Employee Self Service\\Modals\\LoginUser.cs",
-              "RelativeToolTip": "Modals\\LoginUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-05T07:36:59.336Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IdentitySeeder.cs",
-              "DocumentMoniker": "D:\\Angular\\Employee Self Service\\Data\\IdentitySeeder.cs",
-              "RelativeDocumentMoniker": "Data\\IdentitySeeder.cs",
-              "ToolTip": "D:\\Angular\\Employee Self Service\\Data\\IdentitySeeder.cs",
-              "RelativeToolTip": "Data\\IdentitySeeder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-04T13:06:34.297Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Angular\\Employee Self Service\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Angular\\Employee Self Service\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAhwHAAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-04T11:59:07.705Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-30T20:49:12.539Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Angular\\Employee Self Service\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\Angular\\Employee Self Service\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-10T11:23:10.292Z"
+              "Title": "RegisterUser.cs",
+              "DocumentMoniker": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Modals\\DTOs\\RegisterUser.cs",
+              "RelativeDocumentMoniker": "Modals\\DTOs\\RegisterUser.cs",
+              "ToolTip": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Modals\\DTOs\\RegisterUser.cs",
+              "RelativeToolTip": "Modals\\DTOs\\RegisterUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-30T20:48:13.289Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
+              "Title": "RegisterRole.cs",
+              "DocumentMoniker": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Modals\\DTOs\\RegisterRole.cs",
+              "RelativeDocumentMoniker": "Modals\\DTOs\\RegisterRole.cs",
+              "ToolTip": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Modals\\DTOs\\RegisterRole.cs",
+              "RelativeToolTip": "Modals\\DTOs\\RegisterRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-30T20:48:08.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginUser.cs",
+              "DocumentMoniker": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Modals\\DTOs\\LoginUser.cs",
+              "RelativeDocumentMoniker": "Modals\\DTOs\\LoginUser.cs",
+              "ToolTip": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Modals\\DTOs\\LoginUser.cs",
+              "RelativeToolTip": "Modals\\DTOs\\LoginUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-30T20:48:02.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "EmployeeController.cs",
-              "DocumentMoniker": "D:\\Angular\\Employee Self Service\\Controllers\\EmployeeController.cs",
+              "DocumentMoniker": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
-              "ToolTip": "D:\\Angular\\Employee Self Service\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Controllers\\EmployeeController.cs",
               "RelativeToolTip": "Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-10T11:16:51.619Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "emp_info.cs",
-              "DocumentMoniker": "D:\\Angular\\Employee Self Service\\Modals\\emp_info.cs",
-              "RelativeDocumentMoniker": "Modals\\emp_info.cs",
-              "ToolTip": "D:\\Angular\\Employee Self Service\\Modals\\emp_info.cs",
-              "RelativeToolTip": "Modals\\emp_info.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "20260830212022_RoleActivitiesDataType.cs",
+              "DocumentMoniker": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Migrations\\20260830212022_RoleActivitiesDataType.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260830212022_RoleActivitiesDataType.cs",
+              "ToolTip": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Migrations\\20260830212022_RoleActivitiesDataType.cs",
+              "RelativeToolTip": "Migrations\\20260830212022_RoleActivitiesDataType.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAYwE0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T11:10:59.737Z"
+              "WhenOpened": "2026-08-30T21:20:22.114Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Angular\\Employee Self Service\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Angular\\Employee Self Service\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "AssignRole.cs",
+              "DocumentMoniker": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Modals\\DTOs\\AssignRole.cs",
+              "RelativeDocumentMoniker": "Modals\\DTOs\\AssignRole.cs",
+              "ToolTip": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Modals\\DTOs\\AssignRole.cs",
+              "RelativeToolTip": "Modals\\DTOs\\AssignRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T10:58:29.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-30T20:48:00.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "emp_info.cs",
+              "DocumentMoniker": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Modals\\Entities\\emp_info.cs",
+              "RelativeDocumentMoniker": "Modals\\Entities\\emp_info.cs",
+              "ToolTip": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Modals\\Entities\\emp_info.cs",
+              "RelativeToolTip": "Modals\\Entities\\emp_info.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-29T16:45:42.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Screens.cs",
+              "DocumentMoniker": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Modals\\Entities\\Screens.cs",
+              "RelativeDocumentMoniker": "Modals\\Entities\\Screens.cs",
+              "ToolTip": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Modals\\Entities\\Screens.cs",
+              "RelativeToolTip": "Modals\\Entities\\Screens.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T18:44:56.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ScreenController.cs",
+              "DocumentMoniker": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Controllers\\ScreenController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ScreenController.cs",
+              "ToolTip": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Controllers\\ScreenController.cs",
+              "RelativeToolTip": "Controllers\\ScreenController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwFsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T14:08:46.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IdentitySeeder.cs",
+              "DocumentMoniker": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Data\\IdentitySeeder.cs",
+              "RelativeDocumentMoniker": "Data\\IdentitySeeder.cs",
+              "ToolTip": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Data\\IdentitySeeder.cs",
+              "RelativeToolTip": "Data\\IdentitySeeder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-04T13:06:34.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAKkBAAAAAAAAAAAowLkBAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-04T11:59:07.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-10T11:23:10.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\DAL\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DAL\\AppDbContext.cs",
+              "ToolTip": "C:\\Programming\\HRMS (Angular 12 \u002B .net 10)\\HRMS_App\\DAL\\AppDbContext.cs",
+              "RelativeToolTip": "DAL\\AppDbContext.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T11:09:19.258Z"
             }
           ]
         }

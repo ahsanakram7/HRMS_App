@@ -12,10 +12,10 @@ namespace Employee_Self_Service.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Products",
+                name: "emp_info",
                 columns: table => new
                 {
-                    emp_no = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    emp_no = table.Column<int>(type: "int", nullable: false),
                     full_name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     part_full_time_flag = table.Column<string>(type: "nvarchar(1)", maxLength: 1, nullable: true),
                     religion = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: true),
@@ -34,7 +34,7 @@ namespace Employee_Self_Service.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Products", x => x.emp_no);
+                    table.PrimaryKey("PK_emp_info", x => x.emp_no);
                 });
         }
 
@@ -42,7 +42,7 @@ namespace Employee_Self_Service.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Products");
+                name: "emp_info");
         }
     }
 }

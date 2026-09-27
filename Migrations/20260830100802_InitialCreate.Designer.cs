@@ -4,6 +4,7 @@ using Employee_Self_Service.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Employee_Self_Service.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260830100802_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -22,7 +25,7 @@ namespace Employee_Self_Service.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Employee_Self_Service.Modals.Entities.ApplicationUser", b =>
+            modelBuilder.Entity("Employee_Self_Service.Modals.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -90,42 +93,7 @@ namespace Employee_Self_Service.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("Employee_Self_Service.Modals.Entities.RoleActivities", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Role")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("Screen")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<bool>("canAdd")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("canDelete")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("canEdit")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("canView")
-                        .HasColumnType("bit");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("roleActivities");
-                });
-
-            modelBuilder.Entity("Employee_Self_Service.Modals.Entities.Screens", b =>
+            modelBuilder.Entity("Employee_Self_Service.Modals.Screens", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -156,7 +124,7 @@ namespace Employee_Self_Service.Migrations
                     b.ToTable("screens");
                 });
 
-            modelBuilder.Entity("Employee_Self_Service.Modals.Entities.emp_info", b =>
+            modelBuilder.Entity("Employee_Self_Service.Modals.emp_info", b =>
                 {
                     b.Property<int>("emp_no")
                         .HasColumnType("int");
@@ -369,7 +337,7 @@ namespace Employee_Self_Service.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("Employee_Self_Service.Modals.Entities.ApplicationUser", null)
+                    b.HasOne("Employee_Self_Service.Modals.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -378,7 +346,7 @@ namespace Employee_Self_Service.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("Employee_Self_Service.Modals.Entities.ApplicationUser", null)
+                    b.HasOne("Employee_Self_Service.Modals.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -393,7 +361,7 @@ namespace Employee_Self_Service.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Employee_Self_Service.Modals.Entities.ApplicationUser", null)
+                    b.HasOne("Employee_Self_Service.Modals.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -402,7 +370,7 @@ namespace Employee_Self_Service.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("Employee_Self_Service.Modals.Entities.ApplicationUser", null)
+                    b.HasOne("Employee_Self_Service.Modals.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

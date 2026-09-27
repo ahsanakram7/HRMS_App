@@ -1,13 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Employee_Self_Service.Modals
+namespace Employee_Self_Service.Modals.Entities
 {
     public class emp_info
     {
         [Key]
         [Required]
-        public decimal emp_no { get; set; }
+        public int emp_no { get; set; }
         [Required]
         [MaxLength(50)]
         public string? full_name { get; set; }

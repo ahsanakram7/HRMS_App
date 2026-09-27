@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Employee_Self_Service.Modals
+namespace Employee_Self_Service.Modals.DTOs
 {
     public class LoginUser
     {

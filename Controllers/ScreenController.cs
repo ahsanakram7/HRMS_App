@@ -10,35 +10,25 @@ namespace Employee_Self_Service.Controllers
 {
     [Authorize]
     [ApiController]
-    public class EmployeeController : ControllerBase
+    public class ScreenController : ControllerBase
     {
         private readonly AppDbContext _db;
 
-        public EmployeeController(AppDbContext appDbContext)
+        public ScreenController(AppDbContext appDbContext)
         {
             _db = appDbContext;
         }
 
         [HttpGet]
-        [Route("api/Employee/getAllEmployees")]
-        [Authorize(Roles = "Admin,HR,Employee")]
-        public IActionResult getAllEmployees(string obj,int r, int p)
+        [Route("api/Screens/getAllScreensBasic")]
+        [Authorize(Roles = "Admin")]
+        public IActionResult getAllScreensBasic()
         {
             try
             {
-                emp_info? search_emp_Info = JsonSerializer.Deserialize<emp_info>(obj);
+                List<Screens> screens = _db.screens.ToList();
 
-                List<emp_info> employees = _db.emp_info
-                                              .Where(x => x.emp_no == search_emp_Info.emp_no || search_emp_Info.emp_no == 0)
-                                              .Skip(r * p)
-                                              .Take(p)
-                                              .ToList();
-
-                int totalRecords = _db.emp_info.Count();
-
-                employees.ForEach(x => x.totalRecords = totalRecords);
-
-                return Ok(employees);
+                return Ok(screens);
             }
             catch (Exception ex)
             {
@@ -48,21 +38,47 @@ namespace Employee_Self_Service.Controllers
         }
 
         [HttpGet]
-        [Route("api/Employee/getEmployeeById")]
-        [Authorize(Roles = "Admin,HR")]
-        public IActionResult getEmployeeById(int Id)
+        [Route("api/Screens/getAllScreens")]
+        [Authorize(Roles = "Admin")]
+        public IActionResult getAllScreens(string? obj,int r, int p)
+        {
+            try
+            {   
+                List<Screens> screens = _db.screens
+                                              .Where(x => string.IsNullOrEmpty(obj) || x.Name.ToLower().Contains(obj.ToLower()))
+                                              .Skip(r * p)
+                                              .Take(p)
+                                              .ToList();
+
+                int totalRecords = _db.screens.Count();
+
+                screens.ForEach(x => x.totalRecords = totalRecords);
+
+                return Ok(screens);
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+
+        [HttpGet]
+        [Route("api/Screens/getScreenById")]
+        [Authorize(Roles = "Admin")]
+        public IActionResult getScreenById(int Id)
         {
             try
             {
-                emp_info? employee = _db.emp_info.Where(x => x.emp_no == Id).FirstOrDefault();
+                Screens? screen = _db.screens.Where(x => x.Id == Id).FirstOrDefault();
 
-                if (employee != null)
+                if (screen != null)
                 {
-                    return Ok(employee);
+                    return Ok(screen);
                 }
                 else
                 {
-                    return Ok("No Employee Found");
+                    return Ok("No Screen Found");
                 }
             }
             catch (Exception ex)
@@ -73,17 +89,15 @@ namespace Employee_Self_Service.Controllers
         }
 
         [HttpPost]
-        [Route("api/Employee/saveEmployee")]
+        [Route("api/Screens/saveScreen")]
         [Authorize(Roles = "Admin")]
-        public IActionResult saveEmployee(string obj)
+        public IActionResult saveScreen(Screens screen)
         {
             try
             {
-                emp_info? emp_Info = JsonSerializer.Deserialize<emp_info>(obj);
-
-                if (emp_Info != null)
+                if (screen != null)
                 {
-                    _db.emp_info.Add(emp_Info);
+                    _db.screens.Add(screen);
                     _db.SaveChanges();
                 }
 
@@ -96,18 +110,16 @@ namespace Employee_Self_Service.Controllers
             }
         }
 
-        [HttpPut]
-        [Route("api/Employee/updateEmployee")]
+        [HttpPost]
+        [Route("api/Screens/updateScreen")]
         [Authorize(Roles = "Admin")]
-        public IActionResult updateEmployee(string obj)
+        public IActionResult updateScreen(Screens screen)
         {
             try
             {
-                emp_info? emp_Info = JsonSerializer.Deserialize<emp_info>(obj);
-
-                if (emp_Info != null)
+                if (screen != null)
                 {
-                    _db.emp_info.Update(emp_Info);
+                    _db.screens.Update(screen);
                     _db.SaveChanges();
                 }
 
@@ -120,20 +132,20 @@ namespace Employee_Self_Service.Controllers
             }
         }
 
-        [HttpDelete]
-        [Route("api/Employee/deleteEmployee")]
+        [HttpGet]
+        [Route("api/Screens/deleteScreen")]
         [Authorize(Roles = "Admin")]
-        public IActionResult deleteEmployee(int Id)
+        public IActionResult deleteScreen(int Id)
         {
             try
             {
                 if (Id != 0)
                 {
-                    emp_info? emp_Info = _db.emp_info.Where(x => x.emp_no == Id).FirstOrDefault();
+                    Screens? screens = _db.screens.Where(x => x.Id == Id).FirstOrDefault();
 
-                    if (emp_Info != null)
+                    if (screens != null)
                     {
-                        _db.emp_info.Remove(emp_Info);
+                        _db.screens.Remove(screens);
                         _db.SaveChanges();
                         return Ok(new { message = "deleted" });
                     }    
